@@ -61,4 +61,6 @@ typings/
 .next
 
 # Package-lock.json
-pachage-lock.json
+package-lock.json
+
+.env
