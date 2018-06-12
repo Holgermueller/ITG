@@ -5,7 +5,7 @@ const keys = require("./keys.js");
 const client = new Twitter(keys.twitter);
 
 let command = process.argv[2];
-let tweet = process.argv[3];
+let status = process.argv[3];
 
 switch (command) {
     case "get-tweets":
@@ -29,4 +29,14 @@ function theTweets(){
             }
         }
     });
+};
+
+function tweetThis() {
+    client.post('statuses/update', {status: 'I Love Twitter'})
+  .then(function (tweet) {
+    console.log(tweet);
+  })
+  .catch(function (error) {
+    throw error;
+  });
 };
