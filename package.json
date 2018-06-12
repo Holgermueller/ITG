@@ -1,0 +1,22 @@
+{
+  "name": "twitter-toy",
+  "version": "1.0.0",
+  "description": "## Tech needed:",
+  "main": "tweets.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holgermueller/Twitter-toy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holgermueller/Twitter-toy/issues"
+  },
+  "homepage": "https://github.com/Holgermueller/Twitter-toy#readme",
+  "dependencies": {
+    "npm": "^6.1.0"
+  }
+}
