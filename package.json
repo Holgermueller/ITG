@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Holgermueller/Twitter-toy#readme",
   "dependencies": {
-    "npm": "^6.1.0"
+    "dotenv": "^6.0.0",
+    "npm": "^6.1.0",
+    "twitter": "^1.7.1"
   }
 }
