@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: blue;
+  color: whitesmoke;
+}
+
+.main {
+  margin-top: 40%;
+}
+
+.page-section {
+  margin-top: 7%;
+  padding: 4px;
+  border: 1px solid black;
+  height: 15%;
+  width: 90%
+}
+
+#thoughtDisplay {
+  border: 2px solid blue;
+  height: 25%;
+  width: 100%
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: blue;
+  color: whitesmoke;
+}

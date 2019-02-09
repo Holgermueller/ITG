@@ -1,7 +1,7 @@
 //requirements:
 require("dotenv").config();
 const Twitter = require('twitter');
-const keys = require("./keys.js");
+const keys = require("keys.js");
 const client = new Twitter(keys.twitter);
 
 let command = process.argv[2];
