@@ -1,4 +1,3 @@
-//requirements:
 require("dotenv").config();
 const Twitter = require('twitter');
 const keys = require("keys.js");
@@ -17,7 +16,6 @@ switch (command) {
         break;
 };
 
-//functions
 function theTweets(){
     client.get('statuses/user_timeline', {q: 'HmBootcamp', count: 20}, function (error, tweets, response) {
         if (error) {
