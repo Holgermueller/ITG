@@ -8,10 +8,20 @@ const theThoughts = [
 
 ];
 
+function createButton() {
+  let quoteToShare = $('#thoughtToDisplay');
+  console.log(quoteToShare);
+}
+
 $(document).on('click', '#getThought', () => {
   let randomThought = theThoughts[Math.floor(Math.random() * theThoughts.length)];
-  console.log(randomThought);
+
+  let thoughtToDisplay = $('<div>')
+    .text(randomThought)
+    .attr('id', 'thoughtToDisplay')
+    .addClass('thought-to-display');
 
   $('#thoughtDisplay').empty();
-  $('#thoughtDisplay').append(randomThought);
+  $('#thoughtDisplay').append(thoughtToDisplay);
+  createButton()
 });
