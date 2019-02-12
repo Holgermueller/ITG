@@ -30,7 +30,14 @@
     <section class="page-section" id="twitterSection">
 
       <div>
-        <button>Tweet It!</button>
+        <h2>
+          Tweet It!
+        </h2>
+      </div>
+
+      <div>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large">
+          Tweet</a>
       </div>
 
     </section>
@@ -43,10 +50,22 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-  <script src="/assets/js/generator.js"></script>
-  <script src="/assets/js/tweets.js"></script>
-  <script src="/reload/reload.js"></script>
+  <!-- <script type="module" src="assets/js/inspiration.js"></script> -->
+    <script src="assets/js/generator.js"></script>
+  <script>window.twttr = (function (d, s, id) {
+      let js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
 
+      t._e = [];
+      t.ready = f => { t._e.push(f); };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
 </body>
 
 </html>
