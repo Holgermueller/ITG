@@ -1,27 +1,43 @@
-const theThoughts = [
+$(document).ready(() => {
 
-  'Pain is weakness leaving the body.',
+  const theThoughts = [
 
-  'All who wander are not lost.',
+    'Pain is weakness leaving the body.',
 
-  'Do or do not. There is not try.'
+    'All who wander are not lost.',
 
-];
+    'Do or do not. There is not try.',
 
-function createButton() {
-  let quoteToShare = $('#thoughtToDisplay');
-  console.log(quoteToShare);
-}
+    'It is never too late to become what you want to be.',
 
-$(document).on('click', '#getThought', () => {
-  let randomThought = theThoughts[Math.floor(Math.random() * theThoughts.length)];
+    'The two saddest words are "What if...".'
 
-  let thoughtToDisplay = $('<div>')
-    .text(randomThought)
-    .attr('id', 'thoughtToDisplay')
-    .addClass('thought-to-display');
+  ];
 
-  $('#thoughtDisplay').empty();
-  $('#thoughtDisplay').append(thoughtToDisplay);
-  createButton()
+  function createButton() {
+    let quoteToShare = $('#thoughtToDisplay').text();
+
+    let newTwitterBtn = $('<a>')
+      .addClass('twitter-share-button')
+      .attr('href', 'https://twitter.com/intent/tweet?text=' + quoteToShare)
+      .attr('data-size', 'large')
+      .attr('data-text', quoteToShare)
+      
+    $('#twitterBtnDiv').append(newTwitterBtn);
+    console.log(quoteToShare);
+  }
+
+  $(document).on('click', '#getThought', () => {
+    $('#thoughtDisplay').empty();
+
+    let randomThought = theThoughts[Math.floor(Math.random() * theThoughts.length)];
+    let thoughtToDisplay = $('<div>')
+      .text(randomThought)
+      .attr('id', 'thoughtToDisplay')
+      .addClass('thought-to-display');
+
+    $('#thoughtDisplay').append(thoughtToDisplay);
+    createButton()
+  });
+
 });
