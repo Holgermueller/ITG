@@ -5,20 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Inspirational-Thought-Generator</title>
+  <title>Inspirational Thought Generator</title>
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
   <header class="header">
-    <h1>Inspirational-Thought-Generator</h1>
+    <h1>Inspirational Thought Generator</h1>
   </header>
 
   <main class="main">
 
     <section class="page-section">
+
       <div id="thoughtDisplay">Get ready to have your mind blown!</div>
 
       <div>
@@ -36,8 +39,11 @@
       </div>
 
       <div id="twitterBtnDiv">
-        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=" data-size="large">
-          Tweet</a>
+        <button class="bootleg-twitter-button">
+          <i class="fab fa-twitter"></i>
+          <a id="shareTweet" class="twitter-share-button" href="#" data-size="large">
+            Tweet</a>
+        </button>
       </div>
 
     </section>
@@ -50,20 +56,7 @@
     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <!-- <script type="module" src="assets/js/inspiration.js"></script> -->
   <script src="assets/js/generator.js"></script>
-  <script>window.twttr = (function (d, s, id) {
-      let js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
 
-      t._e = [];
-      t.ready = f => { t._e.push(f); };
-
-      return t;
-    }(document, "script", "twitter-wjs"));</script>
 </body>
 
 </html>

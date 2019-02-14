@@ -1,5 +1,22 @@
 $(document).ready(() => {
 
+  // window.twttr = (function(d, s, id) {
+  //   var js, fjs = d.getElementsByTagName(s)[0],
+  //     t = window.twttr || {};
+  //   if (d.getElementById(id)) return t;
+  //   js = d.createElement(s);
+  //   js.id = id;
+  //   js.src = "https://platform.twitter.com/widgets.js";
+  //   fjs.parentNode.insertBefore(js, fjs);
+  
+  //   t._e = [];
+  //   t.ready = function(f) {
+  //     t._e.push(f);
+  //   };
+  
+  //   return t;
+  // }(document, "script", "twitter-wjs"));
+
   const theThoughts = [
 
     'Pain is weakness leaving the body.',
@@ -10,20 +27,18 @@ $(document).ready(() => {
 
     'It is never too late to become what you want to be.',
 
-    'The two saddest words are "What if...".'
+    'The two saddest words are "What if...".',
+
+    'He who dares, wins.'
 
   ];
 
   function createButton() {
-    let quoteToShare = $('#thoughtToDisplay').text();
+    let quoteToShare = $('#thoughtToDisplay').text().replace(/\s/g, '+');
 
-    let newTwitterBtn = $('<a>')
-      .addClass('twitter-share-button')
-      .attr('href', 'https://twitter.com/intent/tweet?text=' + quoteToShare)
-      .attr('data-size', 'large')
-      .attr('data-text', quoteToShare)
+    let tweetURL = 'https://twitter.com/intent/tweet?text=' + quoteToShare;
       
-    $('#twitterBtnDiv').append(newTwitterBtn);
+    $('#shareTweet').attr('href', tweetURL);
     console.log(quoteToShare);
   }
 

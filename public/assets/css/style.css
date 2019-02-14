@@ -26,6 +26,16 @@
   width: 100%
 }
 
+.bootleg-twitter-button {
+  background-color: blue;
+  border-radius: 15px;
+}
+
+.twitter-share-button {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 .footer {
   position: fixed;
   width: 100%;
