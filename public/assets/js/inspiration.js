@@ -4,6 +4,12 @@ module.exports = [
 
   'All who wander are not lost.',
 
-  'Do or do not. There is not try.'
+  'Do or do not. There is not try.',
+
+  'It is never too late to become what you want to be.',
+
+  'The two saddest words are "What if...".',
+
+  'He who dares, wins.'
 
 ];
