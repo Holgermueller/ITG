@@ -1,4 +1,4 @@
-
+@main-color: #22A1F2;
 
 .header {
   position: fixed;
@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   text-align: center;
-  background-color: red;
+  background-color: @main-color;
   color: whitesmoke;
 }
 
@@ -17,19 +17,19 @@
 .page-section {
   margin-top: 7%;
   padding: 4px;
-  border: 1px solid black;
+  border: 2px solid @main-color;
   height: 15%;
   width: 90%
 }
 
 #thoughtDisplay {
-  border: 2px solid blue;
+  border: 2px ridge blue;
   height: 25%;
   width: 100%
 }
 
 .bootleg-twitter-button {
-  background-color: blue;
+  background-color: @main-color;
   border-radius: 15px;
 }
 
@@ -44,6 +44,7 @@
   bottom: 0;
   left: 0;
   text-align: center;
-  background-color: blue;
+  background-color: @main-color;
   color: whitesmoke;
+  padding: 0.5%;
 }
