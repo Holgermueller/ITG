@@ -10,9 +10,16 @@ module.exports = grunt => {
         options: {
           livereload: true
         }
+      },
+      scripts: {
+        files: ['public/assets/js/*.js'],
+        tasks: ['uglify'],
+        options: {
+          livereload: true
+        }
       }
-
     },
+
     less: {
       development: {
         options: {
@@ -23,6 +30,7 @@ module.exports = grunt => {
         }
       }
     },
+
     cssmin: {
       my_target: {
         files: [{
@@ -34,6 +42,7 @@ module.exports = grunt => {
         }]
       }
     },
+
     uglify: {
       my_target: {
         files: {
@@ -41,25 +50,31 @@ module.exports = grunt => {
         }
       }
     },
+
     browserSync: {
       bsFiles: {
-        src : 'public/assets/less/*.less'
+        src: [
+          'public/assets/css/*.min.css',
+          'public/assets/js/*.min.js'
+        ]
       },
       options: {
+        livereload: true,
         watchTask: true,
+        watchEvents: ['add', 'change', 'unlink', 'addDir', 'unlinkDir'],
         server: {
           baseDir: './public'
         }
       }
-    },
+    }
 
   });
 
+  grunt.loadNpmTasks('grunt-uncss');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
   grunt.task.registerTask('default', ['browserSync', 'watch']);
-
 };
