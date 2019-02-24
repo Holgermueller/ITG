@@ -14,13 +14,32 @@
   margin-top: 7%;
   padding: 4px;
   border: 2px solid #22A1F2;
+  border-radius: 15px;
+  background-color: #22A1F2;
   height: 15%;
   width: 90%;
 }
+.page-section > #thoughtDisplay {
+  text-align: center;
+}
 #thoughtDisplay {
-  border: 2px ridge blue;
+  border: 2px ridge #FFD700;
+  background-color: #FFD700;
+  border-radius: 15px;
+  padding: 2%;
   height: 25%;
-  width: 100%;
+  width: 55%;
+}
+#getThought {
+  border-radius: 15px;
+}
+.twitter-div {
+  border: 2px solid #22A1F2;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  width: fit-content;
+  padding: 2px;
+  text-align: center;
 }
 .bootleg-twitter-button {
   background-color: #22A1F2;

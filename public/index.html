@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inspirational Thought Generator</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Inspirational Thought Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.min.css">
-</head>
+  <body>
+    <header class="header">
+      <h1>Inspirational Thought Generator</h1>
+    </header>
 
-<body>
+    <main class="main">
+      <section class="page-section">
+        <div id="thoughtDisplay">Get ready to have your mind blown!</div>
 
-  <header class="header">
-    <h1>Inspirational Thought Generator</h1>
-  </header>
+        <div>
+          <button id="getThought">
+            <h1>
+              Give Me Some Inspiration!
+            </h1>
+          </button>
+        </div>
 
-  <main class="main">
+        <div class="twitter-div">
+          <div>
+            <h2>
+              Share It!
+            </h2>
+          </div>
 
-    <section class="page-section">
+          <div id="twitterBtnDiv">
+            <button class="bootleg-twitter-button">
+              <i class="fab fa-twitter"></i>
+              <a
+                id="shareTweet"
+                class="twitter-share-button"
+                href="#"
+                data-size="large"
+              >
+                Tweet</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <div id="thoughtDisplay">Get ready to have your mind blown!</div>
+    <footer class="footer">Copyright 2019 Holger Mueller</footer>
 
-      <div>
-        <button id="getThought">
-          <h1>
-            Give Me Some Inspiration!
-          </h1>
-        </button>
-      </div>
-
-      <div>
-        <h2>
-          Share It!
-        </h2>
-      </div>
-
-      <div id="twitterBtnDiv">
-        <button class="bootleg-twitter-button">
-          <i class="fab fa-twitter"></i>
-          <a id="shareTweet" class="twitter-share-button" href="#" data-size="large">
-            Tweet</a>
-        </button>
-      </div>
-
-    </section>
-
-  </main>
-
-  <footer class="footer">Copyright 2019 Holger Mueller</footer>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-  <!-- <script type="module" src="assets/js/inspiration.js"></script> -->
-  <script src="assets/js/ugly.min.js"></script>
-
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script type="module" src="assets/js/inspiration.js"></script> -->
+    <script src="assets/js/ugly.min.js"></script>
+  </body>
 </html>
