@@ -23,7 +23,7 @@ $(document).ready(() => {
 
     'All who wander are not lost.',
 
-    'Do or do not. There is not try.',
+    'Do or do not. There is no try.',
 
     'It is never too late to become what you want to be.',
 

@@ -19,10 +19,31 @@
   border-radius: 15px;
   border: 2px ridge #FFD700;
 }
+#getThought {
+  background-color: silver;
+  margin: 5% 0%;
+}
 .twitter-div {
   border: 1px solid #22A1F2;
+  border-radius: 15px;
+  background-color: #22A1F2;
+  color: whitesmoke;
+  margin: auto;
+  width: fit-content;
+  padding: 4px;
+}
+#twitterBtnDiv {
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+.bootleg-twitter-button {
+  color: whitesmoke;
+  background-color: #22A1F2;
+  border-radius: 15px;
+  margin: 4% 0% 4% 14%;
 }
 .footer {
+  margin-top: 6%;
   background-color: #22A1F2;
   text-align: center;
   color: whitesmoke;
