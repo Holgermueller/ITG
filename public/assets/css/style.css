@@ -1,61 +1,29 @@
-.header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  text-align: center;
-  background-color: #22A1F2;
-  color: whitesmoke;
-}
-.main {
-  margin-top: 8%;
-}
-.page-section {
-  margin-top: 7%;
-  padding: 4px;
-  border: 2px solid #22A1F2;
+.container {
   border-radius: 15px;
-  background-color: #22A1F2;
-  height: 15%;
-  width: 90%;
+  border: 3px ridge #22A1F2;
+  margin-top: 5%;
+  background-color: whitesmoke;
 }
-.page-section > #thoughtDisplay {
+.header {
+  margin: 2% 0%;
+  background-color: #22A1F2;
   text-align: center;
+  color: whitesmoke;
+  padding: 4px;
+  border-radius: 15px;
 }
 #thoughtDisplay {
-  border: 2px ridge #FFD700;
+  text-align: center;
   background-color: #FFD700;
+  padding: 8px;
   border-radius: 15px;
-  padding: 2%;
-  height: 25%;
-  width: 55%;
-}
-#getThought {
-  border-radius: 15px;
+  border: 2px ridge #FFD700;
 }
 .twitter-div {
-  border: 2px solid #22A1F2;
-  border-radius: 15px;
-  background-color: whitesmoke;
-  width: fit-content;
-  padding: 2px;
-  text-align: center;
-}
-.bootleg-twitter-button {
-  background-color: #22A1F2;
-  border-radius: 15px;
-}
-.twitter-share-button {
-  text-decoration: none;
-  color: whitesmoke;
+  border: 1px solid #22A1F2;
 }
 .footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  text-align: center;
   background-color: #22A1F2;
+  text-align: center;
   color: whitesmoke;
-  padding: 0.5%;
 }
