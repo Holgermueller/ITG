@@ -13,7 +13,7 @@ module.exports = grunt => {
       },
       scripts: {
         files: ['public/assets/js/*.js'],
-        tasks: ['uglify'],
+        tasks: ['browserify','uglify'],
         options: {
           livereload: true
         }
@@ -46,8 +46,20 @@ module.exports = grunt => {
     uglify: {
       my_target: {
         files: {
-          'public/assets/js/ugly.min.js': ['public/assets/js/generator.js']
+          'public/assets/js/ugly.min.js': ['public/assets/js/build.js']
         }
+      }
+    },
+
+    browserify: {
+      build: {
+        src: [
+          'public/assets/js/generator.js',
+          'public/assets/js/inspiration.js'
+        ],
+        dest: 'public/assets/js/build.js',
+        watch: true,
+        keepAlive: true
       }
     },
 
@@ -76,5 +88,6 @@ module.exports = grunt => {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
+  grunt.loadNpmTasks('grunt-browserify');
   grunt.task.registerTask('default', ['browserSync', 'watch']);
 };
