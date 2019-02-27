@@ -28,9 +28,16 @@
   border: 2px ridge @secondary-color;
 }
 
+.get-thought-div {
+  margin: auto;
+  width: fit-content;
+}
+
 #getThought {
-  background-color: silver;
+  background-image: linear-gradient(#a9a9a9, #dcdcdc);
+  background-color: #c0c0c0;
   margin: 5% 0%;
+  border-radius: @primary-border-radius;
 }
 
 .twitter-div {
@@ -55,9 +62,14 @@
   margin: 4% 0% 4% 14%;
 }
 
-.footer {
-  margin-top: 6%;
-  background-color: @main-color;
-  text-align: center;
+.twitter-share-button,
+.twitter-share-button:hover {
   color: @main-background-color;
+}
+
+.footer {
+  margin: 6% auto 0 auto;
+  color: @main-color;
+  text-align: center;
+  background-color: @main-background-color;
 }

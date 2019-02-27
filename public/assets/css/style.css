@@ -19,9 +19,15 @@
   border-radius: 15px;
   border: 2px ridge #FFD700;
 }
+.get-thought-div {
+  margin: auto;
+  width: fit-content;
+}
 #getThought {
-  background-color: silver;
+  background-image: linear-gradient(#a9a9a9, #dcdcdc);
+  background-color: #c0c0c0;
   margin: 5% 0%;
+  border-radius: 15px;
 }
 .twitter-div {
   border: 1px solid #22A1F2;
@@ -42,9 +48,13 @@
   border-radius: 15px;
   margin: 4% 0% 4% 14%;
 }
-.footer {
-  margin-top: 6%;
-  background-color: #22A1F2;
-  text-align: center;
+.twitter-share-button,
+.twitter-share-button:hover {
   color: whitesmoke;
+}
+.footer {
+  margin: 6% auto 0 auto;
+  color: #22A1F2;
+  text-align: center;
+  background-color: whitesmoke;
 }
