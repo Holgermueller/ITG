@@ -10,6 +10,14 @@ module.exports = [
 
   'The two saddest words are "What if...".',
 
-  'He who dares, wins.'
+  'He who dares, wins.',
+
+  'Be the change you wish to see in the world.',
+
+  'Nothing ends without something else beginning.',
+
+  'Success is no accident.',
+
+  'Seize the day.'
 
 ];
