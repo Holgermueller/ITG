@@ -1,24 +1,21 @@
-# Twitter-Toy
+# Inspirational Thought Generator
 
-## Tech needed:
+## Tech needed
 
-* Twitter API keys and Access tokens - you get these with your Twitter account.
+* [Twitter Tweet Button](https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview.html)
 
-* [Twitter node package](https://www.npmjs.com/package/twitter)
+* [Browserify](https://www.npmjs.com/package/browserify)
 
-* [dotenv node package](https://www.npmjs.com/package/dotenv)
+### Steps
 
-### Steps:
-1) Run npm init to create package.json .gitignore, then download node packages.
+1) Create a javascript file to house an array of inspirational quotes of your choosing.
 
-2) Create a .env folder and add it to your .gitignore; this is where you'll store your API keys and access tokens.
+2) Create another javascript file that requires the file of quotes and randomly selects one of the quotes from the array and displays is on the DOM.
 
-3) Require: require("dotenv").config();
-Put this at the top of the file from which you'll run your commands
+3) Embed the code for the Tweet button in your HTML file. This will allow app users to log in to their Twitter accounts and share the quote if they choose to do so.
 
-4) Create a keys.js file and create an exports.Twitter object to run your keys to your main file.
+4) Deploy your project.
 
-5) Require the following just below your require("dotenv):
-* const Twitter = require('twitter');
-* const keys = require("./keys.js");
-* const client = new Twitter(keys.twitter);
+#### Architect
+
+Holger Mueller
