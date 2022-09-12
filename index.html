@@ -17,7 +17,13 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
@@ -28,8 +34,14 @@
 
       <main class="main">
         <section class="page-section">
+          <div id="thoughtDisplay" class="thought-display"></div>
+          <div id="speakerDisplay" class="speaker-display"></div>
           <div class="get-thought-div">
-            <button id="getThought" class="thought-button">
+            <button
+              id="getThought"
+              class="thought-button"
+              onclick="getThought()"
+            >
               Give Me Some Inspiration!
             </button>
           </div>
@@ -58,5 +70,6 @@
 
       <footer class="footer">&copy; 2022 Holger Mueller</footer>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
