@@ -48,5 +48,5 @@ const getThought = () => {
   document.getElementById("thoughtDisplay").innerHTML =
     thoughtToDisplay.thought;
   document.getElementById("speakerDisplay").innerHTML =
-    thoughtToDisplay.speaker;
+    "- " + thoughtToDisplay.speaker;
 };

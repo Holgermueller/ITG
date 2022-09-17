@@ -3,7 +3,40 @@
   --neutralcolor: hsl(0.67, 1, 0.99);
 }
 
-body {
+body,
+html {
   font-family: "Roboto", sans-serif;
   background-color: var(--neutralcolor);
+  margin: 0;
+}
+
+.header {
+  background-color: aquamarine;
+}
+
+h1 {
+  font-size: 3rem;
+  width: max-content;
+  margin: auto;
+}
+
+.main {
+  background-color: ghostwhite;
+  width: 75%;
+  margin: 2rem auto;
+}
+
+.thought-display {
+  min-height: 200px;
+  border: 1px solid black;
+}
+.thought-on-display {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+.speaker-display {
+  text-align: center;
+  padding: 20px;
 }
