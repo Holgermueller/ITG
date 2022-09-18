@@ -6,7 +6,7 @@
 body,
 html {
   font-family: "Roboto", sans-serif;
-  background-image: url("/Users/holgermueller/coding_projects/ITG/assets/weights.png");
+  background-image: url("../assets/weights.png");
   margin: 0;
   height: 100vh;
 }
