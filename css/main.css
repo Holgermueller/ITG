@@ -1,6 +1,7 @@
 :root {
   --maincolor: ;
   --neutralcolor: hsl(0.67, 1, 0.99);
+  --twitterWhite: rgb(255 255 255);
 }
 
 body,
@@ -11,10 +12,6 @@ html {
   height: 100vh;
 }
 
-.header {
-  background-color: aquamarine;
-}
-
 h1 {
   font-size: 3rem;
   width: max-content;
@@ -22,24 +19,28 @@ h1 {
 }
 
 .main {
-  background-color: ghostwhite;
+  background-color: rgb(248 248 255);
   width: 75%;
   margin: 2rem auto;
+  border-radius: 5px;
 }
-
+.thought-section {
+  padding: 8px;
+}
 .thought-display {
   min-height: 200px;
   border: 1px solid black;
   position: relative;
-  top: 50%;
+  margin: auto;
+  padding: 1rem;
 }
 .thought-on-display {
   margin: auto;
-  position: relative;
+  position: absolute;
   top: 50%;
   text-align: center;
+  transform: translateY(-50%);
   font-size: 2.5rem;
-  padding: 0.5rem;
 }
 .speaker-display {
   text-align: center;
@@ -59,6 +60,15 @@ h2 {
   margin: 0 auto;
   display: block;
   text-decoration: none;
+  border: none;
+  background-color: rgb(29 161 242);
+  padding: 8px;
+  border-radius: 15px;
+  color: var(--twitterWhite);
+}
+a {
+  text-decoration: none;
+  color: var(--twitterWhite);
 }
 .footer {
   text-align: center;

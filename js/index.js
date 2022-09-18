@@ -34,7 +34,7 @@ const thoughtArray = [
   },
   {
     thought:
-      "I believe that one defines oneself by reinventionn. To not be like your parents. To not be like your friends. To be yourself. To cut yourself out of stone.",
+      "I believe that one defines oneself by reinvention. To not be like your parents. To not be like your friends. To be yourself. To cut yourself out of stone.",
     speaker: "Henry Rollins",
   },
 ];
@@ -49,4 +49,13 @@ const getThought = () => {
     thoughtToDisplay.thought;
   document.getElementById("speakerDisplay").innerHTML =
     "- " + thoughtToDisplay.speaker;
+};
+
+const tweetIt = () => {
+  const quoteToShare = document.getElementById("thoughtDisplay").textContent;
+  const tweetURL = "https://twitter.com/intent/tweet?text=" + quoteToShare;
+
+  document.getElementById("shareTweet").href = tweetURL;
+
+  console.log(quoteToShare, tweetURL);
 };
