@@ -37,6 +37,58 @@ const thoughtArray = [
       "I believe that one defines oneself by reinvention. To not be like your parents. To not be like your friends. To be yourself. To cut yourself out of stone.",
     speaker: "Henry Rollins",
   },
+  {
+    thought: "Be not afraid of going slowly. Be afraid of standing still.",
+    speaker: "Japanese Proverb",
+  },
+  {
+    thought: "Never follow the crowd. Go where it's empty.",
+    speaker: "Arnold Scwarzenegger",
+  },
+  {
+    thought: "You can have results or excuses. Not both.",
+    speaker: "Arnold Scwarzenegger",
+  },
+  {
+    thought: "I don't have any other message thanb don't forget you are alive.",
+    speaker: "Joe Strummer",
+  },
+  {
+    thought:
+      "Scar tissue is stronger than regular tissue. Realize the strength, move on",
+    speaker: "Henry Rollins",
+  },
+  {
+    thought: "Knowledge without miles equals bull$h!t.",
+    speaker: "Henry Rollins",
+  },
+  {
+    thought: "We live in an age where there is no heroic death.",
+    speaker: "Yukio Mishima",
+  },
+  {
+    thought:
+      "You always know the mark of a coward. A coward hides behind freedom. A brave person stands in front of freedom and defends it for others.",
+    speaker: "Henry Rollins",
+  },
+  {
+    thought:
+      "Less bullets, more brains. The strong don't need guns. Guns are tools of the weak. This is true. If you disagree with me, it's ok, you're wrong.",
+    speaker: "Henry Rollins",
+  },
+  {
+    thought:
+      "You will become way less concerned with what other people think of you when you realize how seldom they do.",
+    speaker: "David Foster Wallace",
+  },
+  {
+    thought: "We cannot simply sit and stare at our wounds forever.",
+    speaker: "Haruki Murakami",
+  },
+  {
+    thought: "Pain is inevitable. Suffering is optional.",
+    speaker: "Haruki Murakami",
+  },
 ];
 
 const getThought = () => {
