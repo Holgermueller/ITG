@@ -111,3 +111,7 @@ const tweetIt = () => {
 
   console.log(quoteToShare, tweetURL);
 };
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("year").innerHTML = year;
